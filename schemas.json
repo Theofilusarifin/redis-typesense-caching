@@ -1,0 +1,73 @@
+{
+    "name": "prompt_caches",
+    "fields": [
+        {
+            "name": "redis_key",
+            "type": "string"
+        },
+        {
+            "name": "organization_id",
+            "type": "string"
+        },
+        {
+            "name": "domain_id",
+            "type": "string"
+        },
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "conversation_id",
+            "type": "string"
+        },
+        {
+            "name": "agent_id",
+            "type": "string"
+        },
+        {
+            "name": "use_web_search",
+            "type": "string"
+        },
+        {
+            "name": "user_question",
+            "type": "string"
+        },
+        {
+            "name": "user_question_embedding",
+            "type": "float[]",
+            "facet": false,
+            "num_dim": 1024
+        },
+        {
+            "name": "ner_entities",
+            "type": "object",
+            "optional": true
+        },
+        {
+            "name": "response_total_token",
+            "type": "int32"
+        },
+        {
+            "name": "response_total_time_in_minutes",
+            "type": "int32"
+        },
+        {
+            "name": "cache_hit_count",
+            "type": "int32"
+        },
+        {
+            "name": "created_at",
+            "type": "string"
+        },
+        {
+            "name": "ttl_in_minutes",
+            "type": "int32"
+        },
+        {
+            "name": "active_status",
+            "type": "bool"
+        }
+    ],
+    "default_sorting_field": "cache_hit_count"
+}
