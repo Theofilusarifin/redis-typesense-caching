@@ -27,7 +27,7 @@
         },
         {
             "name": "use_web_search",
-            "type": "string"
+            "type": "bool"
         },
         {
             "name": "user_question",
@@ -40,9 +40,8 @@
             "num_dim": 1024
         },
         {
-            "name": "ner_entities",
-            "type": "object",
-            "optional": true
+            "name": "user_question_ner_entities",
+            "type": "string"
         },
         {
             "name": "response_total_token",
@@ -50,7 +49,7 @@
         },
         {
             "name": "response_total_time_in_minutes",
-            "type": "int32"
+            "type": "float"
         },
         {
             "name": "cache_hit_count",
